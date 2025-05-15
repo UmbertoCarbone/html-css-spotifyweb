@@ -6,7 +6,6 @@
 }
 
 .wrapper {
-  background-color: rgb(76, 37, 182);
   height: 100vh;
 }
 
@@ -29,12 +28,28 @@
 
 .content {
   width: calc(100% - 230px);
-  background-color: #fff;
+  background-color: #f7bdbd;
 
   .upgrade {
     background-color: #141922;
+
+    .btn-upgrade {
+      color: white;
+    }
   }
 }
-ul li {
-  width: 2rem;
+ul img {
+  width: 1.7rem;
+}
+
+.button-sidebar {
+  li a {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+
+    .text-grey {
+      margin: 0.75rem;
+    }
+  }
 }
