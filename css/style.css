@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  background-color: rgb(76, 37, 182);
+  height: 100vh;
+}
+
+.top {
+  height: calc(100% - 70px);
+}
+
+.bottom {
+  height: 70px;
+  background-color: black;
+}
