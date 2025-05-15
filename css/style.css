@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
 }
 
 .wrapper {
@@ -43,42 +44,41 @@ ul img {
   width: 1.7rem;
 }
 
+.text-grey {
+  color: Grey;
+}
 .button-sidebar {
   li a {
     display: flex;
     align-items: center;
     padding: 1rem;
   }
-
-  .text-grey {
-    margin: 0.75rem;
-    color: Grey;
-  }
 }
 
 .nome-playlist {
-  .text-grey {
-    margin: 0.75rem;
-    color: Grey;
-  }
-
   li {
     padding: 0.5rem;
   }
 }
 
-.download-app {
-  padding-top: 25rem;
-  li a {
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-  }
-  li {
-    padding: 0.5rem;
-  }
+.square {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(187, 183, 183);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
 }
 
-hr {
-  background-color: grey;
+.create-playlist {
+  padding: 1.25rem;
+}
+
+/***************************
+TESTO NEL CONTAINER
+****************************/
+.bottom {
+  overflow: hidden;
 }
