@@ -32,12 +32,13 @@
 
   .upgrade {
     background-color: #141922;
+  }
 
-    .btn-upgrade {
-      color: white;
-    }
+  .btn-upgrade {
+    color: white;
   }
 }
+
 ul img {
   width: 1.7rem;
 }
@@ -47,9 +48,37 @@ ul img {
     display: flex;
     align-items: center;
     padding: 1rem;
-
-    .text-grey {
-      margin: 0.75rem;
-    }
   }
+
+  .text-grey {
+    margin: 0.75rem;
+    color: Grey;
+  }
+}
+
+.nome-playlist {
+  .text-grey {
+    margin: 0.75rem;
+    color: Grey;
+  }
+
+  li {
+    padding: 0.5rem;
+  }
+}
+
+.download-app {
+  padding-top: 25rem;
+  li a {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+  }
+  li {
+    padding: 0.5rem;
+  }
+}
+
+hr {
+  background-color: grey;
 }
