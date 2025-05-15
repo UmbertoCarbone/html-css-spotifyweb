@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .wrapper {
@@ -11,9 +12,29 @@
 
 .top {
   height: calc(100% - 70px);
+  display: flex;
 }
 
 .bottom {
   height: 70px;
+  background-color: grey;
+}
+
+.sidebar {
   background-color: black;
+  color: white;
+  width: 230px;
+  height: 100%;
+}
+
+.content {
+  width: calc(100% - 230px);
+  background-color: #fff;
+
+  .upgrade {
+    background-color: #141922;
+  }
+}
+ul li {
+  width: 2rem;
 }
