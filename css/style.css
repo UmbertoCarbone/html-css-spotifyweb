@@ -5,7 +5,9 @@
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
 }
-
+/***************************
+SIDEBAR
+****************************/
 .wrapper {
   height: 100vh;
 }
@@ -17,7 +19,7 @@
 
 .bottom {
   height: 70px;
-  background-color: grey;
+  background-color: #282828;
 }
 
 .sidebar {
@@ -29,10 +31,10 @@
 
 .content {
   width: calc(100% - 230px);
-  background-color: #f7bdbd;
+  background-color: #141922;
 
   .upgrade {
-    background-color: #141922;
+    background-color: #080b12;
   }
 
   .btn-upgrade {
@@ -75,9 +77,59 @@ ul img {
 .create-playlist {
   padding: 1.25rem;
 }
+.download-app {
+  padding: 1rem;
+}
+.AAA {
+  width: 1rem;
+}
+
+.padding {
+  padding-top: 500px;
+  border: none;
+  width: 20px;
+}
+hr {
+  width: 75%;
+}
+/***************************
+HOVER
+****************************/
+a:hover {
+  border-left: 4px solid #a7f62e;
+}
+
+.btn-upgrade:hover {
+  color: #141922;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 4px #aa1111;
+}
+.podcast:hover {
+  border-bottom: 4px solid #a7f62e;
+}
 
 /***************************
-TESTO NEL CONTAINER
+?????????????????????????????
+****************************/
+
+.upgrade {
+  height: 100px;
+}
+.btn-upgrade {
+  border-radius: 8px;
+  padding: 10px 7px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: 0 2px 4px rgb(236, 228, 228);
+}
+.podcast {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+/***************************
+TESTO BOTTOM
 ****************************/
 .bottom {
   overflow: hidden;
