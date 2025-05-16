@@ -157,13 +157,16 @@ UPGRADED + SOUND
 }
 
 .card {
+  img {
+    width: 100%;
+  }
 }
 
 /***************************
-COL--COL-COL--COL-COL-COL-COL
+Quesra e' la col in Desktop dove ne abbiamo 6
 ****************************/
-.col-xl-6 {
-  width: calc(100% / 12 * 2);
+.card-col {
+  width: calc(100% / 12 * 2); /* 2 + 2+2+2+2+2 = 12 */
 }
 
 /***************************
@@ -177,17 +180,20 @@ TESTO BOTTOM
 Query
 ****************************/
 
-/* FATTO DA ARTUR
-@media screen and (min-width: 568px) {
-}
-
-@media screen and (min-width: 768px) {
-}
-
-@media screen and (min-width: 992px) {
-  .col-md-2 {
-    width: calc(100% / 12 * 4);
+/* Tablet */
+@media screen and (max-width: 992px) {
+  .card-col {
+    width: calc(100% / 12 * 4); /* 4+4+4 = 12 */
   }
 }
 
-*/
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .card-col {
+    width: calc(100% / 12 * 6); /* 6+6 = 12 */
+  }
+}
+
+/* Mobile extra small */
+@media screen and (max-width: 568px) {
+}
