@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
+  border: 1px dashed red;
 }
 /***************************
 SIDEBAR
@@ -27,6 +28,8 @@ SIDEBAR
   color: white;
   width: 230px;
   height: 100%;
+  /*display: flex;
+  flex-direction: column; */
 }
 
 .content {
@@ -80,7 +83,7 @@ ul img {
 .download-app {
   padding: 1rem;
 }
-.AAA {
+.installa-app {
   width: 1rem;
 }
 
@@ -91,6 +94,10 @@ ul img {
 }
 hr {
   width: 75%;
+}
+
+.text-greylight {
+  color: rgb(151, 146, 146);
 }
 /***************************
 HOVER
@@ -104,7 +111,8 @@ a:hover {
   background-color: rgb(255, 255, 255);
   box-shadow: 0 2px 4px #aa1111;
 }
-.podcast:hover {
+
+.podcast li:hover {
   border-bottom: 4px solid #a7f62e;
 }
 
@@ -127,10 +135,21 @@ a:hover {
   display: flex;
   list-style: none;
   justify-content: center;
+
+  li {
+    padding: 1rem;
+  }
 }
 /***************************
 TESTO BOTTOM
 ****************************/
 .bottom {
   overflow: hidden;
+}
+
+/***************************
+Query
+****************************/
+
+@media screen and (min-width: 568px) {
 }
