@@ -13,12 +13,12 @@ SIDEBAR
 }
 
 .top {
-  height: calc(100% - 70px);
+  height: calc(100% - 80px);
   display: flex;
 }
 
 .bottom {
-  height: 70px;
+  height: 80px;
   background-color: #282828;
 }
 
@@ -178,15 +178,44 @@ Quesra e' la col in Desktop dove ne abbiamo 6
 }
 
 /***************************
-TESTO BOTTOM
+BOTTOM
 ****************************/
 .bottom {
   overflow: hidden;
 }
+.player {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fixfoto {
+  width: 50px;
+}
 
-/***************************
-Bottom
-****************************/
+.left {
+  padding: 1rem;
+  display: flex;
+
+  .text-white {
+    color: white;
+  }
+
+  .name-track {
+    padding-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .heart-file {
+    padding-left: 0.5rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+  }
+  .fa-regular {
+    padding: 0.4rem;
+  }
+}
 
 /***************************
 Query
