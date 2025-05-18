@@ -6,7 +6,7 @@
   text-decoration: none;
 }
 /***************************
-SIDEBAR
+TOP-SIDE
 ****************************/
 .wrapper {
   height: 100vh;
@@ -15,11 +15,6 @@ SIDEBAR
 .top {
   height: calc(100% - 80px);
   display: flex;
-}
-
-.bottom {
-  height: 80px;
-  background-color: #282828;
 }
 
 .sidebar {
@@ -178,11 +173,15 @@ Quesra e' la col in Desktop dove ne abbiamo 6
 }
 
 /***************************
-BOTTOM
+BOTTOM-SIDE
 ****************************/
+
 .bottom {
+  height: 80px;
+  background-color: #282828;
   overflow: hidden;
 }
+
 .player {
   display: flex;
   justify-content: space-between;
@@ -217,6 +216,35 @@ BOTTOM
   }
 }
 
+.button-music-flex {
+  font-size: 1.25rem;
+  padding: 0.25rem 1rem;
+  display: flex;
+  align-items: center;
+
+  a {
+    padding: 0.25rem 1rem;
+  }
+  .far {
+    font-size: 1.75rem;
+  }
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right {
+  padding-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+.fa-solid {
+  padding: 0.5rem;
+}
+
 /***************************
 Query
 ****************************/
@@ -242,7 +270,7 @@ Query
 /***************************
 HOVER
 ****************************/
-a:hover {
+.top a:hover {
   border-left: 4px solid #a7f62e;
 }
 
@@ -266,4 +294,71 @@ a:hover {
   .play {
     opacity: 1;
   }
+}
+/***************************
+PRESO DA GOOGLE 
+****************************/
+.barra-multimediale {
+  display: flex;
+  align-items: center;
+  background-color: #282828;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.slider-barra {
+  flex-grow: 1;
+  margin: 0 10px;
+}
+
+.slider {
+  width: 300px;
+  height: 5px;
+  background: #fff;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+.slider:hover {
+  opacity: 1;
+}
+.slider::-webkit-slider-thumb {
+  width: 15px;
+  height: 15px;
+  background: #4caf50;
+  cursor: pointer;
+  -webkit-appearance: none; /* Elimina lo stile predefinito del browser */
+  appearance: none;
+  margin-top: -5px;
+}
+
+.volume-control {
+  display: flex;
+  align-items: center;
+}
+
+.volume-slider {
+  width: 65px;
+  height: 5px;
+  background: #fff;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+.volume-slider:hover {
+  opacity: 1;
+}
+.volume-slider::-webkit-slider-thumb {
+  width: 15px;
+  height: 15px;
+  background: #0abd19;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -5px;
+}
+
+.info {
+  color: #fff;
+  margin-left: 10px;
 }
