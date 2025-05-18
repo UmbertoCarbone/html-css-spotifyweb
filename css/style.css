@@ -252,7 +252,12 @@ Query
 /* Tablet */
 @media screen and (max-width: 992px) {
   .card-col {
-    width: calc(100% / 12 * 4); /* 4+4+4 = 12 */
+    width: calc(100% / 12 * 3);
+  }
+  .col {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -265,6 +270,38 @@ Query
 
 /* Mobile extra small */
 @media screen and (max-width: 568px) {
+  .card-col {
+    width: calc(100% / 12 * 6); /* 6+6 = 12 */
+  }
+  .sidebar {
+    width: 80px;
+  }
+  .content {
+    width: calc(100% - 80px);
+  }
+
+  .wrapper {
+    span {
+      opacity: 0;
+    }
+    h2 {
+      opacity: 0;
+    }
+  }
+
+  .create-playlist {
+    opacity: 0;
+  }
+
+  .download-app {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .installa-app {
+    width: 1.6rem;
+  }
 }
 
 /***************************
