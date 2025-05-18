@@ -100,22 +100,6 @@ hr {
 .text-greylight {
   color: rgb(151, 146, 146);
 }
-/***************************
-HOVER
-****************************/
-a:hover {
-  border-left: 4px solid #a7f62e;
-}
-
-.btn-upgrade:hover {
-  color: #141922;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0 2px 4px #aa1111;
-}
-
-.podcast li:hover {
-  border-bottom: 4px solid #a7f62e;
-}
 
 /***************************
 UPGRADED + SOUND
@@ -148,6 +132,16 @@ UPGRADED + SOUND
   h3 {
     color: white;
     text-align: center;
+    padding: 1rem 0rem;
+  }
+  h2 {
+    color: white;
+
+    padding: 1rem 0rem;
+  }
+  p {
+    color: grey;
+    padding-bottom: 1rem;
   }
 }
 
@@ -161,8 +155,18 @@ UPGRADED + SOUND
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 1rem;
+  position: relative;
+
   img {
     width: 85%;
+  }
+
+  .play {
+    font-size: 80px;
+    position: absolute;
+    bottom: 50%;
+    opacity: 0;
   }
 }
 
@@ -179,6 +183,10 @@ TESTO BOTTOM
 .bottom {
   overflow: hidden;
 }
+
+/***************************
+Bottom
+****************************/
 
 /***************************
 Query
@@ -200,4 +208,33 @@ Query
 
 /* Mobile extra small */
 @media screen and (max-width: 568px) {
+}
+
+/***************************
+HOVER
+****************************/
+a:hover {
+  border-left: 4px solid #a7f62e;
+}
+
+.btn-upgrade:hover {
+  color: #141922;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 4px #aa1111;
+}
+
+.podcast li:hover {
+  border-bottom: 4px solid #a7f62e;
+}
+.br50:hover {
+  border-radius: 50%;
+}
+
+.card:hover {
+  img {
+    opacity: 0.5;
+  }
+  .play {
+    opacity: 1;
+  }
 }
