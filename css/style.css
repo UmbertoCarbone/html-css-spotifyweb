@@ -8,6 +8,10 @@
 /***************************
 TOP-SIDE
 ****************************/
+
+.sidebartop {
+  font-weight: bold;
+}
 .wrapper {
   height: 100vh;
 }
@@ -111,8 +115,9 @@ UPGRADED + SOUND
 }
 .btn-upgrade {
   border-radius: 25px;
-  border: 2px solid white;
+  border: 1.5px solid white;
   padding: 10px 38px;
+  color: white;
 }
 .podcast {
   display: flex;
@@ -124,6 +129,7 @@ UPGRADED + SOUND
     padding-bottom: 0.25rem;
     margin: 1rem;
     border-bottom: 3px solid transparent;
+    font-weight: bold;
   }
 }
 .container {
@@ -320,25 +326,28 @@ Query
   }
 }
 
+.br50 {
+  border-radius: 50%;
+}
+
 /***************************
 HOVER
 ****************************/
-.top a:hover {
+/*.top a:hover {
   border-left: 4px solid #a7f62e;
-}
+} */
 
 .btn-upgrade:hover {
-  color: #141922;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0 2px 4px #aa1111;
+  color: #ffffff;
+  scale: 1.05;
+
+  /* background-color: rgb(255, 255, 255); */
+  /* box-shadow: 0 2px 4px #aa1111; */
 }
 
 /* .podcast li:hover {
   border-bottom: 4px solid #a7f62e;
 } */
-.br50:hover {
-  border-radius: 50%;
-}
 
 .card:hover {
   img {
